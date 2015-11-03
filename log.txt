@@ -1,0 +1,7 @@
+Input:
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://test1.ru/"><env:Body><env:getProductList><Request><ns1:title>Заголовок тестового продукта</ns1:title><ns1:categoryId>20</ns1:categoryId></Request></env:getProductList></env:Body></env:Envelope>
+
+---
+messageData:
+O:8:"stdClass":2:{s:5:"title";s:54:"Заголовок тестового продукта";s:10:"categoryId";s:2:"20";}
