@@ -16,6 +16,6 @@ function __autoload($class_name){
 
 ini_set("soap.wsdl_cache_enabled", "0");
 
-$server = new SoapServer("http://{$_SERVER['HTTP_HOST']}/myservice.wsdl");
+$server = new SoapServer("http://{$_SERVER['HTTP_HOST']}/myservice.wsdl.php");
 $server->setClass("SoapGateWay");
 $server->handle();

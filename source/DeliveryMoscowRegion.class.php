@@ -14,6 +14,7 @@ class DeliveryMoscowRegion extends Delivery
     {
 
         // TODO: Implement getDeliveryCost() method.
+        return 500;
     }
 
     function getDeliveryTitle()

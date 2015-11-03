@@ -1,6 +1,6 @@
 Input:
 <?xml version="1.0" encoding="UTF-8"?>
-<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://test1.ru/"><env:Body><env:getProductList><Request><ns1:title>Заголовок тестового продукта</ns1:title><ns1:categoryId>20</ns1:categoryId></Request></env:getProductList></env:Body></env:Envelope>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://git.local/"><env:Body><env:getProductList><Request><ns1:title>Заголовок тестового продукта</ns1:title><ns1:categoryId>20</ns1:categoryId></Request></env:getProductList></env:Body></env:Envelope>
 
 ---
 messageData:

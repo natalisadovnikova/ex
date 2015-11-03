@@ -52,8 +52,13 @@ print sprintf('<br><br> %s, %d рублей',$delivery->getDeliveryTitle(), $del
 print sprintf('<br><br> Стоимость товаров с доставкой %s рублей', $korzina->getFinalCost($delivery));
 
 
-//доставка в Москве не доступным для региона способом выдаст исключение
-$delivery = Delivery::getDelivery( Delivery::MOSCOW, DeliveryTypes::DPD);
+try{
+    //доставка в Москве не доступным для региона способом выдаст исключение
+    $delivery = Delivery::getDelivery( Delivery::MOSCOW, DeliveryTypes::DPD);
+}catch (Exception $e){
+    print sprintf('<br><br> Пойманное исключение: %s', $e->getMessage());
+}
+
 
 
 

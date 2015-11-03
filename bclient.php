@@ -37,7 +37,7 @@ $product->categoryId = 20;
 
 try{
 
-    $client = new SoapClient("http://{$_SERVER['HTTP_HOST']}/myservice.wsdl", array( 'soap_version' => SOAP_1_2));
+    $client = new SoapClient("http://{$_SERVER['HTTP_HOST']}/myservice.wsdl.php", array( 'soap_version' => SOAP_1_2));
     echo '<pre>';
     print_r($client->__getFunctions());//получаем список методов сервера
     var_dump($client->getProductList($product));

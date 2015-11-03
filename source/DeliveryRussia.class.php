@@ -14,6 +14,7 @@ class DeliveryRussia extends Delivery
     {
 
         // TODO: Implement getDeliveryCost() method.
+        return 200;
     }
 
     function getDeliveryTitle()
